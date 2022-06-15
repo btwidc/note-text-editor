@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-import './App.css';
+import MainPage from './pages/MainPage';
+import './App.scss';
 
-function App() {
-  return <div></div>;
-}
+const App: FC = () => {
+  return <MainPage />;
+};
 
 export default App;

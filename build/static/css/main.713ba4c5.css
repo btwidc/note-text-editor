@@ -1,0 +1,120 @@
+.notes-header-container {
+  border-bottom: var(--note-border);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 20px 20px 30px;
+}
+.note-tag-container {
+  margin-right: 10px;
+}
+.note-tag-container:hover {
+  color: var(--note-tag-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.notes-tags-container {
+  justify-content: space-between;
+  padding: 20px;
+}
+.notes-tags-container,
+.notes-tags-container .notes-tags {
+  display: flex;
+  flex-flow: row wrap;
+}
+.note-container:hover {
+  background-color: var(--note-hover-background-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.note-container .note {
+  border-bottom: var(--note-border);
+  padding: 10px 20px;
+}
+.sidebar-container {
+  background-color: var(--sidebar-background-color);
+  border-right: var(--sidebar-border);
+  grid-column: sidebar;
+  min-height: 100%;
+  z-index: 1;
+}
+.content-container {
+  background-color: var(--content-background-color);
+  grid-column: content;
+  min-height: 100%;
+  padding: 40px;
+  z-index: 1;
+}
+.main-page {
+  display: grid;
+  grid-template-columns: [sidebar] 30% [content] 70%;
+  min-height: 100vh;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  --content-background-color: #f5f4f4;
+  --sidebar-background-color: #f0f0f0;
+  --sidebar-border: 1.5px solid #e7e6e699;
+  --note-hover-background-color: #92b4ff;
+  --note-border: 1px solid #85848499;
+  --note-tag-color: #4681f4;
+  --button-text-color: #f5f5f5;
+  --button-background-color: #5783db;
+  --button-hover-background-color: #4681f4;
+  background-color: inherit;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+h1,
+h2 {
+  align-items: center;
+  display: flex;
+  font-family: Poppins, sans-serif;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+h3 {
+  font-size: 15px;
+}
+h3,
+h4 {
+  align-items: center;
+  display: flex;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+}
+h4 {
+  color: var(--note-tag-color);
+  font-size: 14px;
+}
+button {
+  align-items: center;
+  background-color: var(--button-background-color);
+  border: 2px solid var(--button-background-color);
+  border-radius: 10px;
+  color: var(--button-text-color);
+  display: flex;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  height: 55px;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  padding: 5px 10px;
+  width: 140px;
+}
+button:hover {
+  background-color: var(--button-hover-background-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+/*# sourceMappingURL=main.713ba4c5.css.map*/

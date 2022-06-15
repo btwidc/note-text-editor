@@ -1,0 +1,30 @@
+.input-title {
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--text-font-family);
+  color: var(--text-color);
+
+  &:hover {
+    color: var(--label-hover-color);
+    cursor: pointer;
+  }
+}
+
+.input-field {
+  display: block;
+  padding: 0 5px 0 10px;
+  width: 50%;
+  height: 40px;
+  border: var(--input-border-color);
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--text-font-family);
+  color: var(--text-color);
+
+  &:focus {
+    border: var(--input-focus-border-color);
+  }
+}
