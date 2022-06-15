@@ -1,0 +1,7 @@
+.content-container {
+  grid-column: content;
+  min-height: 100%;
+  padding: 20px 40px;
+  background-color: var(--content-background-color);
+  z-index: 1;
+}

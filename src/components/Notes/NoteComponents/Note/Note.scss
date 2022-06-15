@@ -1,0 +1,14 @@
+.note {
+  padding: 10px 20px;
+  border-bottom: var(--note-border);
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--note-hover-background-color);
+    transition: background-color 0.3s;
+  }
+}
+
+.note.active {
+  background-color: var(--note-active-background-color);
+}

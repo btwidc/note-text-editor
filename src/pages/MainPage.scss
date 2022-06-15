@@ -1,0 +1,6 @@
+.main-page {
+  display: grid;
+  grid-template-columns: [sidebar] 30% [content] 70%;
+  width: 100%;
+  min-height: 100vh;
+}
